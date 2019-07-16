@@ -6,4 +6,23 @@ listed: true
 published: true
 is_layout: false
 ---
-Content of the home page
+{% extends 'layouts/default' %}
+{% block content %}
+<header class="pt-175 pb-110 header_6">
+
+    <!-- one figure per background image -->
+
+    <figure></figure>
+    <figure></figure>
+    <figure></figure>
+    <figure></figure>	
+
+    <div class="container px-xl-0 text-center">
+        <div class="row justify-content-center slogan">
+            <div class="col-lg-9">
+                <h1 class="color-white blue-bg">Christ-Centered, Family-Focused, &amp; Spiritually-Steadfast</h1>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}

@@ -488,7 +488,7 @@ b, strong {
 }
 
 .header_6 > figure {
-  animation: imageAnimation 24s linear infinite 0s;
+  animation: imageAnimation 30s linear infinite 0s;
   backface-visibility: hidden;
   background-size: cover;
   background-position: center center;
@@ -502,18 +502,22 @@ b, strong {
   z-index: 0;
 }
   
-.header_6 > figure:nth-child(1) { background-image: url(/images/header_bgs/bg3.jpg); }
+.header_6 > figure:nth-child(1) { background-image: url(/images/header_bgs/bg1.jpg); }
 .header_6 > figure:nth-child(2) {
   animation-delay: 6s;
-  background-image: url(/images/header_bgs/bg2.jpg);
+  background-image: url(/images/header_bgs/bg3.jpg);
 }
 .header_6 > figure:nth-child(3) {
   animation-delay: 12s;
-  background-image: url(/images/header_bgs/bg1.jpg);
+  background-image: url(/images/header_bgs/bg5.jpg);
 }
 .header_6 > figure:nth-child(4) {
   animation-delay: 18s;
-  background-image: url(/images/header_bgs/bg5.jpg);
+  background-image: url(/images/header_bgs/bg4.jpg);
+}
+.header_6 > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url(/images/header_bgs/bg2.jpg);
 }
 
 @keyframes

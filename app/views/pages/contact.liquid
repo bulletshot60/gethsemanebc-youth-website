@@ -1,0 +1,54 @@
+---
+title: Contact Page
+slug: contact
+position: 0
+listed: true
+published: true
+is_layout: false
+---
+{% extends 'layouts/default' %}
+{% block content %}
+<section class="content_9 bg-light pt-100 pb-95">
+    <div class="container px-xl-0">
+        <div class="row justify-content-center">
+            <div class="mt-20 col-xl-12 col-lg-12 f-22 text-adaptive">
+                <h2>Youth Leader</h2>
+                <div class="row justify-content-center">
+                    <img src="{{ 'miles.png' | theme_image_url }}" width="230px"/>
+                </div>
+                <div class="row">
+                    <div class="mt-20 col-xl-12 col-lg-12 f-22 text-adaptive">
+                        <div>
+                            <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">Name</div>
+                            <div class="f-42 bold color-main text_big">Miles Scarboro</div>
+                        </div>
+                        <div>
+                            <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">E-mail</div>
+                            <a href="mailto:rscar733@students.bju.edu" class="mb-35 f-42 bold link color-main text_big">rscar733@students.bju.edu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-20 col-xl-12 col-lg-12 f-22 text-adaptive">
+                <h2>Church Contact</h2>
+                <div>
+                    <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">E-mail</div>
+                    <a href="mailto:gethsemanebc@gmail.com" class="mb-35 f-42 bold link color-main text_big">gethsemanebc@gmail.com</a>
+                </div>
+                <div>
+                    <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">Phone</div>
+                    <a href="tel:+18642696400" class="mb-35 f-42 bold link color-main text_big">+1 864 269 6400</a>
+                </div>
+                <div>
+                    <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">Street Address</div>
+                    <div class="f-42 bold color-main text_big">107 Gethsemane Drive, Greenville, SC 29611</div>
+                </div>
+                <div>
+                    <div class="mb-10 f-14 semibold text-uppercase sp-20 color-heading title">Mailing Address</div>
+                    <div class="f-42 bold color-main text_big">PO Box 4597, Greenville, SC  29608</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

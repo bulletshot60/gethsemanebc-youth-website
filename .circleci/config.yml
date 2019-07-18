@@ -1,0 +1,27 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6.3-stretch
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "Gemfile.lock" }}
+            - v1-dependencies-
+
+      - run: gem install bundler:2.0.2
+
+      - run:
+          name: install dependencies
+          command: |
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+      - run: bundle exec wagon deploy production

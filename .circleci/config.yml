@@ -28,4 +28,4 @@ jobs:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
-      - run: bundle exec wagon deploy production
+      - run: bundle exec wagon deploy production -v
